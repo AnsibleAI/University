@@ -5,3 +5,7 @@ getModulePath(){
 setupLocalModules(){
   mkdir -p /home/me/.ansible/plugins/modules
 }
+
+test(){
+  ansible localhost -m my_local_module
+}
