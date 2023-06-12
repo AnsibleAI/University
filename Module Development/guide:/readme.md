@@ -3,4 +3,4 @@ sch:
 - https://www.youtube.com/results?search_query=ansible+module+development
 
 # Guide:
-https://www.missioncloud.com/blog/how-to-create-and-test-your-custom-ansible-modules
+>Modules should only be one file. If you need multiple files, you’re looking to make an action plugin not a module.
