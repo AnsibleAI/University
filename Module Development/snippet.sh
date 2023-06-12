@@ -9,3 +9,7 @@ setupLocalModules(){
 test(){
   ansible localhost -m my_local_module
 }
+
+showDoc(){
+  ansible-doc -t module my_local_module
+}
