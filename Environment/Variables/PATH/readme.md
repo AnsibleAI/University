@@ -1,5 +1,5 @@
 # Solution
-https://www.jeffgeerling.com/comment/16714#comment-16714
+https://www.jeffgeerling.com/blog/2017/add-path-global-path-ansible
 >Much simpified idempotent solution:
 >```
 >- name: Add another bin dir to system-wide $PATH.
@@ -8,4 +8,12 @@ https://www.jeffgeerling.com/comment/16714#comment-16714
 >copy:
 >dest: /etc/profile.d/custom-path.sh
 >content: 'PATH=$PATH:{{ my_custom_path_var }}'
+>```
+---
+>```
+>- name: Set path in profile
+>ansible.builtin.lineinfile:
+>dest: /etc/profile
+>insertafter: EOF
+>line: "PATH=$PATH:{{ my_custom_path_var }}"
 >```
