@@ -1,4 +1,7 @@
-# Solution
+# Guide:
+- https://www.educba.com/ansible-environment-variables/
+
+# .Obsolete
 https://www.jeffgeerling.com/blog/2017/add-path-global-path-ansible
 >Much simpified idempotent solution:
 >```
