@@ -1,0 +1,16 @@
+- name: Gnome VM
+  hosts: default
+  remote_user: vagrant
+
+  tasks:
+  - name: Check
+    ansible.builtin.shell: echo $PATH #which code
+    args:
+      executable: "/usr/bin/bash"  #"{{bash}}"
+    become: yes
+    become_method: sudo
+    become_flags: "--login"
+    register: which
+
+  - debug:
+      msg: "{{which.stdout}}"
