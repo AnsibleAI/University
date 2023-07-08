@@ -6,7 +6,7 @@ Doc: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_environmen
 Guide:
 - https://www.educba.com/ansible-environment-variables/
 
-Remember:
+# Remember:
 >```
 >tasks:
 >- debug:
@@ -14,4 +14,4 @@ Remember:
 >- debug:
 >msg: "Second method: {{(lookup('env','HOME'))}}"
 >```
->If you notice the difference, both have different outputs because the lookup method retrieves the local server environment variable details we have set. In contrast, the ansible_env retrieves the remote server environment variable details.
+>If you notice the difference, both have different outputs because the **lookup** method retrieves the local server environment variable details we have set. In contrast, the **ansible_env** retrieves the remote server environment variable details.
