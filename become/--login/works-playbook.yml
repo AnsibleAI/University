@@ -1,7 +1,8 @@
 - name: Become at Play level
   hosts: default
   remote_user: vagrant
-  # Fix problem with shell PATH incomplete.
+  
+  # Fix problem with shell PATH being incomplete.
   become: yes
   become_method: sudo
   become_flags: "--login"
@@ -11,8 +12,6 @@
   tasks:
   - name: Check
     ansible.builtin.shell: echo $PATH #which code
-    args:
-      executable: "/usr/bin/bash"  #"{{bash}}"
     register: which
 
   - debug:
