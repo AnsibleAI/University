@@ -1,4 +1,4 @@
-sch: google.com/search?q=ansible+get_url+from+github+release
+sch: https://www.google.com/search?q=ansible+get_url+from+github+release
 
 # Module:
 https://docs.ansible.com/ansible/latest/collections/community/general/github_release_module.html
