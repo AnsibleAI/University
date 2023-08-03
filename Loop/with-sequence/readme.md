@@ -1,5 +1,5 @@
 # Loop using with-sequence
-This lets you set a `variable` to use for loop iterations!
+This lets you use a range to set loop iterations!
 
 answer: https://stackoverflow.com/questions/48653092/ansible-with-items-in-range
 doc: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html#with-sequence
