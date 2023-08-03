@@ -1,0 +1,9 @@
+# https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-22-04-quickstart
+
+- name: Append sudo to user's groups
+  ansible.builtin.user:
+    name: "{{new_user}}"
+    groups: sudo
+    append: yes
+  become: true
+  when: sudo

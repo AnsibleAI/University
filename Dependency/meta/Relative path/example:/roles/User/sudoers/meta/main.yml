@@ -1,0 +1,3 @@
+dependencies:
+  - ../User/sudoers/add
+  - ../User/sudoers/nopasswd

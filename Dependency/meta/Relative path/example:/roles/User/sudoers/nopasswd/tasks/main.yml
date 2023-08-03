@@ -1,0 +1,3 @@
+- debug:
+    msg: "Hello {{new_user}} nopasswd: {{sudo_nopasswd}}"
+  when: sudo_nopasswd
