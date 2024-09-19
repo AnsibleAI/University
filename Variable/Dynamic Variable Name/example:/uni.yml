@@ -5,4 +5,6 @@
 
 tasks:
   - ansible.builtin.debug:
-    msg: "Hello"
+    msg: "{{ get_interface }}"
+
+# from: https://www.reddit.com/r/ansible/comments/bt14b0/question_how_to_create_dynamic_variable_names/
