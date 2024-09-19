@@ -1,0 +1,8 @@
+- hosts: localhost
+  vars:
+    interface: 'enp1s0'
+    get_interface: "{{ lookup('vars', 'ansible_' + interface) }}"
+
+tasks:
+  - ansible.builtin.debug:
+    msg: "Hello"
